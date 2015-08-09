@@ -17,7 +17,8 @@ def db(request):
 
     greetings = Greeting.objects.all()
 	
-
+	mp_success = MP_Success()
+	
 	mp_success_objects = MP_Success.objects.all()
 	
     return render(request, 'db.html', {'greetings': greetings})
