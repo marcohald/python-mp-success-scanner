@@ -25,9 +25,9 @@
 
 
 <ul>
-
-{% for MP_Success in MP_Success %}
-    <li>test:</li>
+    <li>test_ohne_loop:</li>
+{% for MP_Success in mp_success_objects %}
+    <li>test_mit_loop:</li>
 	<li>{{ MP_Success.link }}</li>
 {% endfor %}
 
